@@ -1,1 +1,539 @@
 Project Design Phase Phase
+PocketSmart AI: Your Smart Budget & Recommendation Assistant
+
+Project Design Phase
+
+1. Introduction
+
+The Design Phase of the PocketSmart AI project converts the requirements identified in the Requirement Analysis Phase into a clear technical and visual design.
+
+PocketSmart AI is an intelligent budget management and recommendation assistant that helps users manage their income, expenses, savings, and spending habits. The system uses AI-based analysis to provide personalized recommendations and help users make better financial decisions.
+
+
+---
+
+2. Objectives of the Design Phase
+
+The main objectives are:
+
+To design a simple and user-friendly interface.
+
+To define the overall system architecture.
+
+To design the database structure.
+
+To design the budget and expense management modules.
+
+To design the AI recommendation system.
+
+To define the flow of information between different modules.
+
+To ensure security and privacy of user data.
+
+To make the application responsive and easy to use.
+
+
+
+---
+
+3. System Architecture
+
+PocketSmart AI can be designed using a three-layer architecture:
+
+USER
+                ↓
+       ┌─────────────────┐
+       │   Frontend/UI   │
+       │ Dashboard       │
+       │ Budget          │
+       │ Expenses        │
+       │ Recommendations │
+       └────────┬────────┘
+                ↓
+       ┌─────────────────┐
+       │ Backend / API   │
+       │ Authentication  │
+       │ Budget Logic    │
+       │ Expense Logic   │
+       │ AI Processing   │
+       └────────┬────────┘
+                ↓
+       ┌─────────────────┐
+       │ Database        │
+       │ Users           │
+       │ Transactions    │
+       │ Budgets         │
+       │ Recommendations │
+       └─────────────────┘
+                ↓
+          AI Recommendation
+              Engine
+
+
+---
+
+4. Main Modules
+
+4.1 User Authentication Module
+
+This module manages user registration and login.
+
+Functions:
+
+Create account
+
+Login
+
+Logout
+
+Password protection
+
+User profile management
+
+
+
+---
+
+4.2 Dashboard Module
+
+The dashboard provides a quick overview of the user's financial information.
+
+It displays:
+
+Total income
+
+Total expenses
+
+Available balance
+
+Savings
+
+Budget status
+
+Recent transactions
+
+AI recommendations
+
+
+
+---
+
+4.3 Income Management Module
+
+Users can record their income sources.
+
+Example:
+
+Income Source	Amount
+
+Salary	₹25,000
+Part-time work	₹5,000
+Other	₹2,000
+
+
+The system calculates the total monthly income automatically.
+
+
+---
+
+4.4 Expense Management Module
+
+Users can add and categorize their expenses.
+
+Categories:
+
+Food
+
+Travel
+
+Education
+
+Shopping
+
+Bills
+
+Entertainment
+
+Healthcare
+
+Other
+
+
+The system keeps track of spending in each category.
+
+
+---
+
+4.5 Budget Management Module
+
+Users can create a monthly budget.
+
+For example:
+
+Monthly Income     : ₹30,000
+
+Food               : ₹5,000
+Travel             : ₹3,000
+Education          : ₹4,000
+Shopping           : ₹3,000
+Bills              : ₹5,000
+Savings            : ₹10,000
+
+The system compares the planned budget with actual expenses.
+
+
+---
+
+4.6 AI Recommendation Module
+
+This is the main intelligent component of PocketSmart AI.
+
+The system analyzes:
+
+Income
+
+Expenses
+
+Spending categories
+
+Budget limits
+
+Savings
+
+Previous spending patterns
+
+
+Based on the analysis, it generates personalized recommendations.
+
+Example:
+
+> "Your food expenses have increased this month. Consider reducing unnecessary food purchases and setting a lower weekly food budget."
+
+
+
+
+---
+
+4.7 Savings Module
+
+This module helps users monitor their savings.
+
+It can show:
+
+Monthly savings
+
+Savings percentage
+
+Savings goal
+
+Progress toward the goal
+
+
+Example:
+
+Savings Goal: ₹50,000
+
+Current Savings: ₹32,000
+Progress: 64%
+
+
+---
+
+4.8 Reports and Analytics Module
+
+The system provides visual reports such as:
+
+Monthly expense chart
+
+Category-wise spending
+
+Income vs expense
+
+Savings trends
+
+Budget utilization
+
+
+Charts and graphs make financial information easier to understand.
+
+
+---
+
+5. Database Design
+
+A basic database can contain the following tables.
+
+Users Table
+
+Field	Description
+
+User_ID	Unique user ID
+Name	User name
+Email	User email
+Password	Login password
+
+
+Income Table
+
+Field	Description
+
+Income_ID	Income identifier
+User_ID	User identifier
+Source	Income source
+Amount	Income amount
+Date	Income date
+
+
+Expenses Table
+
+Field	Description
+
+Expense_ID	Expense identifier
+User_ID	User identifier
+Category	Expense category
+Amount	Expense amount
+Date	Expense date
+Description	Expense details
+
+
+Budget Table
+
+Field	Description
+
+Budget_ID	Budget identifier
+User_ID	User identifier
+Category	Budget category
+Limit	Spending limit
+Month	Budget month
+
+
+Recommendations Table
+
+Field	Description
+
+Recommendation_ID	Unique ID
+User_ID	User identifier
+Message	AI recommendation
+Date	Generated date
+
+
+
+---
+
+6. Data Flow Design
+
+The basic data flow is:
+
+User
+ ↓
+Login
+ ↓
+Dashboard
+ ↓
+Enter Income / Expenses
+ ↓
+Database
+ ↓
+Data Analysis
+ ↓
+AI Recommendation Engine
+ ↓
+Personalized Recommendations
+ ↓
+Dashboard
+
+
+---
+
+7. User Interface Design
+
+The interface should be simple, clean, and beginner-friendly.
+
+Main Screens
+
+1. Login Page
+
+
+2. Registration Page
+
+
+3. Dashboard
+
+
+4. Add Income
+
+
+5. Add Expense
+
+
+6. Budget Planner
+
+
+7. Savings Goal
+
+
+8. AI Recommendations
+
+
+9. Reports
+
+
+10. User Profile
+
+
+
+
+---
+
+8. Dashboard Design
+
+A sample dashboard structure:
+
+┌──────────────────────────────────────┐
+│           PocketSmart AI             │
+├──────────────────────────────────────┤
+│ Income       Expense       Balance   │
+│ ₹30,000      ₹18,000       ₹12,000   │
+├──────────────────────────────────────┤
+│        Monthly Expense Chart         │
+│              📊                      │
+├──────────────────────────────────────┤
+│ Budget Status                        │
+│ Food       ███████░░░ 70%            │
+│ Travel     █████░░░░░ 50%            │
+│ Shopping   ████████░░ 80%            │
+├──────────────────────────────────────┤
+│ 🤖 AI Recommendation                 │
+│ Reduce unnecessary shopping expenses │
+└──────────────────────────────────────┘
+
+
+---
+
+9. AI Recommendation Design
+
+The AI component follows this process:
+
+User Financial Data
+        ↓
+Data Collection
+        ↓
+Data Processing
+        ↓
+Spending Pattern Analysis
+        ↓
+Identify Problems
+        ↓
+Generate Recommendation
+        ↓
+Display to User
+
+For example:
+
+Input:
+
+Monthly income: ₹30,000
+
+Food expenses: ₹8,000
+
+Food budget: ₹5,000
+
+
+AI Output:
+
+> "Food spending is above your planned budget. Consider setting a weekly spending limit to control expenses."
+
+
+
+
+---
+
+10. Security Design
+
+Security is an important part of PocketSmart AI.
+
+The system should include:
+
+Secure login
+
+Password protection
+
+User-specific data access
+
+Input validation
+
+Secure database storage
+
+Protection against unauthorized access
+
+Privacy of financial information
+
+
+
+---
+
+11. Technology Design
+
+A possible technology stack is:
+
+Component	Technology
+
+Frontend	HTML, CSS, JavaScript
+Backend	Python / Flask
+Database	SQLite / MySQL
+AI	Google Gemini API
+Charts	Chart.js
+Development	VS Code
+Version Control	GitHub
+
+
+
+---
+
+12. Overall Design
+
+POCKETSMART AI
+                       │
+       ┌───────────────┼───────────────┐
+       ↓               ↓               ↓
+   User Interface   Backend/API     Database
+       │               │               │
+       ↓               ↓               ↓
+  Dashboard       Business Logic   User Data
+  Budget          AI Processing    Income
+  Expenses        Authentication   Expenses
+  Reports                          Budgets
+       │
+       └──────────────┬──────────────┘
+                      ↓
+              AI Recommendations
+                      ↓
+               User Feedback
+
+
+---
+
+13. Expected Design Outcome
+
+At the end of the Design Phase, PocketSmart AI will have:
+
+A clearly defined system architecture.
+
+User interface layouts.
+
+Database structure.
+
+Module design.
+
+Data-flow design.
+
+AI recommendation workflow.
+
+Security design.
+
+Technology stack.
+
+
+Conclusion
+
+The Design Phase provides the technical blueprint for PocketSmart AI. It defines how users interact with the system, how financial data is stored and processed, and how the AI engine generates personalized budget recommendations. This design will serve as the foundation for the Development Phase, where the actual application will be implemented.

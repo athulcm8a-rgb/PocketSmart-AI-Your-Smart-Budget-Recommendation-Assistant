@@ -1,1 +1,401 @@
 Requirement Analysis Phase
+PocketSmart AI: Your Smart Budget & Recommendation Assistant
+
+Requirement Analysis Phase
+
+1. Introduction
+
+The Requirement Analysis Phase is an important stage in the development of PocketSmart AI, a smart budgeting and recommendation assistant. In this phase, the requirements of users are identified, analyzed, documented, and organized.
+
+PocketSmart AI is designed to help users manage their money, track expenses, create budgets, analyze spending habits, and receive personalized recommendations. The system uses AI-based analysis to provide useful suggestions based on the user's financial information.
+
+
+---
+
+2. Problem Statement
+
+Many people find it difficult to manage their monthly income and expenses. Common problems include:
+
+Lack of proper expense tracking.
+
+Overspending on unnecessary items.
+
+Difficulty creating a realistic budget.
+
+Not knowing where most of their money is spent.
+
+Difficulty identifying spending patterns.
+
+Lack of personalized financial suggestions.
+
+Managing expenses manually can be time-consuming.
+
+
+Therefore, there is a need for a simple and intelligent application that can help users understand and manage their personal budgets.
+
+
+---
+
+3. Proposed Solution
+
+PocketSmart AI provides a digital platform where users can enter their income and expenses. The system analyzes the information and presents useful financial insights.
+
+The application can provide:
+
+Income and expense tracking.
+
+Monthly budget creation.
+
+Expense categorization.
+
+Spending analysis.
+
+Budget alerts.
+
+Savings suggestions.
+
+AI-powered recommendations.
+
+Dashboard with financial summaries.
+
+
+
+---
+
+4. Objectives
+
+The main objectives of PocketSmart AI are:
+
+1. To help users track their daily expenses.
+
+
+2. To provide an easy way to create monthly budgets.
+
+
+3. To categorize expenses automatically or manually.
+
+
+4. To analyze users' spending patterns.
+
+
+5. To identify unnecessary or excessive spending.
+
+
+6. To provide personalized recommendations.
+
+
+7. To encourage better saving habits.
+
+
+8. To display financial information through a simple dashboard.
+
+
+
+
+---
+
+5. Functional Requirements
+
+Functional requirements describe what the system should do.
+
+5.1 User Management
+
+User should be able to create an account.
+
+User should be able to log in securely.
+
+User should be able to manage their profile.
+
+
+5.2 Income Management
+
+Add income details.
+
+Record different sources of income.
+
+View total income for a selected period.
+
+
+5.3 Expense Management
+
+Add daily expenses.
+
+Edit or delete expenses.
+
+Enter expense amount, date, and category.
+
+View previous transactions.
+
+
+5.4 Expense Categorization
+
+Expenses can be divided into categories such as:
+
+Food
+
+Transportation
+
+Education
+
+Shopping
+
+Entertainment
+
+Bills
+
+Healthcare
+
+Other
+
+
+5.5 Budget Management
+
+Set a monthly budget.
+
+Set category-wise spending limits.
+
+Display remaining budget.
+
+Compare actual spending with planned spending.
+
+
+5.6 AI Recommendation System
+
+The AI component analyzes the user's financial data and provides suggestions such as:
+
+Areas where the user spends more.
+
+Possible ways to reduce unnecessary expenses.
+
+Suggested spending limits.
+
+Savings suggestions.
+
+Personalized budget recommendations.
+
+
+5.7 Dashboard
+
+The dashboard should display:
+
+Total income.
+
+Total expenses.
+
+Remaining balance.
+
+Budget usage.
+
+Major expense categories.
+
+Savings information.
+
+AI recommendations.
+
+
+5.8 Notifications and Alerts
+
+The system can notify users when:
+
+Spending approaches a budget limit.
+
+A category exceeds its planned budget.
+
+Unusual spending is detected.
+
+A monthly budget needs attention.
+
+
+
+---
+
+6. Non-Functional Requirements
+
+Non-functional requirements describe how the system should perform.
+
+Performance
+
+The application should respond quickly when users add or view financial information.
+
+Security
+
+User financial information should be protected from unauthorized access.
+
+Usability
+
+The interface should be simple and easy for beginners to understand.
+
+Reliability
+
+The system should store and retrieve transaction information accurately.
+
+Scalability
+
+The application should be capable of supporting more users and transactions in the future.
+
+Maintainability
+
+The source code should be organized so that new features can easily be added.
+
+Compatibility
+
+The application should work properly on commonly used browsers and devices.
+
+
+---
+
+7. Hardware Requirements
+
+Minimum hardware requirements may include:
+
+Processor: Intel Core i3 or equivalent
+
+RAM: 4 GB or above
+
+Storage: 10 GB free space
+
+Internet connection
+
+Smartphone or computer for accessing the application
+
+
+
+---
+
+8. Software Requirements
+
+Possible software requirements include:
+
+Frontend: HTML, CSS, JavaScript
+
+Backend: Python / Flask
+
+Database: SQLite or MySQL
+
+AI: Google Gemini API
+
+Development Environment: Visual Studio Code
+
+Browser: Google Chrome / Microsoft Edge
+
+Version Control: Git and GitHub
+
+
+
+---
+
+9. User Requirements
+
+The user should be able to:
+
+1. Register and log in.
+
+
+2. Enter income details.
+
+
+3. Add and manage expenses.
+
+
+4. Select expense categories.
+
+
+5. Set monthly budgets.
+
+
+6. View financial summaries.
+
+
+7. Analyze spending habits.
+
+
+8. Receive AI-based recommendations.
+
+
+9. Monitor budget limits.
+
+
+10. View previous transactions.
+
+
+
+
+---
+
+10. AI Requirements
+
+The AI module should analyze available financial information and generate understandable recommendations.
+
+For example:
+
+Input:
+Monthly income = ₹25,000
+Food expenses = ₹8,000
+Transportation = ₹3,000
+Shopping = ₹6,000
+
+AI Output:
+“Your food and shopping expenses form a significant portion of your recorded spending. Consider setting category-wise limits and reviewing non-essential purchases.”
+
+The recommendations should be presented as general budgeting guidance, not as professional financial advice.
+
+
+---
+
+11. Data Requirements
+
+The system may store:
+
+Data	Description
+
+User ID	Unique user identification
+Name	User name
+Email	User email
+Income	Income amount
+Expense	Expense amount
+Category	Expense category
+Date	Transaction date
+Budget	Planned spending amount
+Balance	Remaining amount
+Recommendation	AI-generated suggestion
+
+
+
+---
+
+12. System Constraints
+
+Internet may be required for AI-based features.
+
+AI recommendations depend on the quality of user-provided data.
+
+The application should protect sensitive financial information.
+
+AI-generated recommendations may not always be perfectly accurate.
+
+The system should not claim to provide professional investment or financial advice.
+
+
+
+---
+
+13. Expected Outcome
+
+After completing the Requirement Analysis Phase, the project team will have a clear understanding of:
+
+What PocketSmart AI should do.
+
+Who will use the system.
+
+What data is required.
+
+What technologies can be used.
+
+What functional features need to be developed.
+
+What security and performance requirements must be considered.
+
+
+Conclusion
+
+The Requirement Analysis Phase establishes the foundation for PocketSmart AI. By clearly identifying user needs, functional requirements, technical requirements, and system constraints, the development team can proceed to the Design Phase with a well-defined understanding of the proposed application.

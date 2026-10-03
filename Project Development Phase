@@ -1,1 +1,236 @@
 Project Development Phase
+PocketSmart AI: Your Smart Budget & Recommendation Assistant
+
+Project Development Phase
+
+1. Introduction
+
+The Development Phase is the stage where the PocketSmart AI design and requirements are converted into a working application. During this phase, the frontend, backend, database, budget calculation, and AI recommendation features are developed and integrated.
+
+2. Development Objectives
+
+The main objectives are:
+
+To create a simple and user-friendly budgeting application.
+
+To allow users to enter their income and expenses.
+
+To automatically calculate the remaining budget.
+
+To categorize and track expenses.
+
+To provide personalized recommendations using AI.
+
+To display financial information clearly using charts and summaries.
+
+
+3. Technology Stack
+
+Component	Technology
+
+Frontend	HTML, CSS, JavaScript
+Backend	Python / Flask
+Database	SQLite
+AI	Google Gemini API
+Charts	Chart.js
+Development Tool	Visual Studio Code
+Version Control	Git & GitHub
+
+
+4. Frontend Development
+
+The frontend is developed to provide an easy interface for users.
+
+Main screens/features:
+
+Home/Dashboard
+
+Income entry
+
+Expense entry
+
+Expense categories
+
+Budget summary
+
+AI recommendation section
+
+Charts and reports
+
+
+The interface uses HTML for structure, CSS for styling, and JavaScript for interactive features.
+
+5. Backend Development
+
+The backend handles the application's main operations.
+
+It performs:
+
+User input processing
+
+Income and expense calculations
+
+Budget calculations
+
+Data storage and retrieval
+
+Communication with the AI service
+
+Sending results back to the frontend
+
+
+6. Database Development
+
+An SQLite database is used to store financial information.
+
+Example tables:
+
+Income Table
+
+Income ID
+
+Amount
+
+Source
+
+Date
+
+
+Expense Table
+
+Expense ID
+
+Category
+
+Amount
+
+Description
+
+Date
+
+
+Budget Table
+
+Budget ID
+
+Category
+
+Budget Amount
+
+Period
+
+
+7. Budget Calculation Module
+
+The system calculates the available budget automatically.
+
+Formula:
+
+Remaining Budget = Total Income − Total Expenses
+
+It can also calculate category-wise spending and compare actual expenses with the planned budget.
+
+8. AI Recommendation Module
+
+The AI module analyzes the user's budget information and generates personalized suggestions.
+
+For example, based on spending data, it can provide recommendations such as:
+
+Reduce unnecessary expenses.
+
+Set a monthly spending limit.
+
+Allocate more money toward savings.
+
+Monitor categories with high spending.
+
+
+The Gemini API can be integrated into the backend to generate these recommendations.
+
+9. Expense Tracking
+
+Users can enter expenses with details such as:
+
+Amount
+
+Category
+
+Description
+
+Date
+
+
+Expenses can be grouped into categories such as:
+
+Food
+
+Transport
+
+Education
+
+Shopping
+
+Entertainment
+
+Bills
+
+Others
+
+
+10. Dashboard Development
+
+The dashboard provides a quick overview of the user's financial status.
+
+It displays:
+
+Total income
+
+Total expenses
+
+Remaining balance
+
+Category-wise expenses
+
+Budget status
+
+AI-generated recommendations
+
+
+Charts can be used to make the information easier to understand.
+
+11. Integration
+
+After developing individual modules, they are integrated into one application.
+
+The integration connects:
+
+User → Frontend → Backend → Database → AI Module → Recommendation → Frontend
+
+This allows the user to enter financial information and receive calculations and recommendations within the same application.
+
+12. Testing During Development
+
+Each module is tested while development is in progress.
+
+Examples:
+
+Checking whether income is stored correctly.
+
+Checking expense calculations.
+
+Testing category-wise totals.
+
+Testing database operations.
+
+Checking AI recommendation responses.
+
+Testing frontend and backend communication.
+
+
+13. Development Outcome
+
+At the end of the Development Phase, PocketSmart AI becomes a functional budgeting application that can record income and expenses, calculate budgets, visualize spending, and provide AI-based personalized recommendations.
+
+14. Conclusion
+
+The Development Phase transforms the PocketSmart AI concept and design into a working software system. By integrating the frontend, backend, database, and AI recommendation module, the project provides users with a convenient way to track expenses, manage budgets, understand spending patterns, and receive personalized financial suggestions.

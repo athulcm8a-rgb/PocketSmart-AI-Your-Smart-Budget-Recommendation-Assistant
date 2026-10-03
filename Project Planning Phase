@@ -1,1 +1,183 @@
 Project Planning Phase
+PocketSmart AI: Your Smart Budget & Recommendation Assistant
+
+Project Planning Phase
+
+1. Introduction
+
+The Planning Phase defines how the PocketSmart AI project will be developed, what resources are required, how the work will be divided, and when each activity will be completed. The main goal is to create an AI-powered assistant that helps users manage their budget, track expenses, save money, and receive personalized recommendations.
+
+2. Project Objectives
+
+The main objectives of PocketSmart AI are:
+
+To help users create and manage a personal budget.
+
+To record and categorize daily expenses.
+
+To analyze income and spending patterns.
+
+To provide AI-based financial recommendations.
+
+To identify unnecessary or excessive spending.
+
+To help users set savings goals.
+
+To provide a simple and user-friendly interface.
+
+To generate useful summaries and reports.
+
+
+3. Project Scope
+
+Included:
+
+User registration/login.
+
+Income and expense entry.
+
+Expense categorization.
+
+Monthly budget creation.
+
+Budget monitoring.
+
+Savings goal management.
+
+AI-based recommendations.
+
+Spending analysis.
+
+Dashboard with charts and summaries.
+
+
+Not Included:
+
+Direct access to bank accounts.
+
+Actual money transfers.
+
+Investment or stock trading.
+
+Professional financial advice.
+
+
+4. Proposed Technology Stack
+
+Component	Technology
+
+Frontend	HTML, CSS, JavaScript
+Backend	Python
+Framework	Flask
+Database	SQLite / MySQL
+AI	Google Gemini API
+Charts	Chart.js
+Development Tool	VS Code
+Version Control	Git & GitHub
+
+
+5. Major Modules
+
+1. User Management Module
+Handles registration and login.
+
+
+2. Budget Management Module
+Allows users to set monthly spending limits.
+
+
+3. Expense Tracking Module
+Records expenses with amount, date, and category.
+
+
+4. Income Management Module
+Records and manages different sources of income.
+
+
+5. AI Recommendation Module
+Uses spending information to generate personalized suggestions.
+
+
+6. Savings Goal Module
+Helps users create and monitor savings targets.
+
+
+7. Dashboard & Report Module
+Displays spending summaries, charts, budget status, and savings information.
+
+
+
+6. Project Work Plan
+
+Phase	Main Activities
+
+Requirement Analysis	Identify user needs and system requirements
+Planning	Define objectives, scope, resources, and schedule
+Design	Design UI, database, architecture, and system flow
+Development	Build frontend, backend, database, and AI features
+Testing	Test functionality, usability, and AI responses
+Documentation	Prepare project report and technical documentation
+Demonstration	Demonstrate the completed application
+
+
+7. Development Schedule
+
+Week 1: Requirement analysis and project planning
+Week 2: UI and system architecture design
+Week 3: Database and backend development
+Week 4: Frontend development
+Week 5: Gemini AI integration and recommendation system
+Week 6: Testing and bug fixing
+Week 7: Documentation and final improvements
+Week 8: Project demonstration and submission
+
+8. Resources Required
+
+Hardware:
+
+Laptop/desktop computer
+
+Internet connection
+
+
+Software:
+
+VS Code
+
+Python
+
+Flask
+
+SQLite/MySQL
+
+Git and GitHub
+
+Web browser
+
+
+Human Resources:
+
+Project team members
+
+Project guide/mentor
+
+
+9. Risk Management
+
+Risk	Solution
+
+API failure	Provide fallback responses
+Incorrect AI recommendations	Validate input and use clear prompts
+Data loss	Maintain regular database backups
+Security issues	Use authentication and secure data handling
+Development delays	Divide tasks and follow the project schedule
+Bugs	Perform regular testing
+
+
+10. Expected Outcome
+
+At the end of the project, PocketSmart AI will provide a simple platform where users can enter their income and expenses, monitor their budget, track savings, understand their spending habits, and receive AI-generated personalized recommendations.
+
+11. Planning Phase Conclusion
+
+The Planning Phase establishes a clear roadmap for developing PocketSmart AI. By defining the objectives, scope, modules, technologies, resources, schedule, and risks, the project can be developed systematically and efficiently.
